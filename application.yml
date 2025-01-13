@@ -1,0 +1,12 @@
+server:
+  port: 8888  # Puerto para Config Server
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dante6192/config-repository # URL de tu repositorio GitHub
+          clone-on-start: true
